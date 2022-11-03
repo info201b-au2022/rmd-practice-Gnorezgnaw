@@ -1,0 +1,16 @@
+---
+title: "Covid Report"
+output: html_document
+---
+
+```{r source, echo=TRUE}
+source("analysis.R")
+```
+
+## Report
+According to the data set, the number of total COVID cases is `r get_total_cases()` and the number of total deaths is `r get_total_deaths()`.
+
+## Chart
+``` {r echo=FALSE}
+cases_plot
+```
